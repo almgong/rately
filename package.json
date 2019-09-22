@@ -1,0 +1,42 @@
+{
+  "name": "rately",
+  "version": "0.0.0",
+  "description": "A package for executing arbitrary functions in a rate limit compliant fashion",
+  "main": "./dist/main.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dist": "webpack -p",
+    "dist:watch": "webpack --watch --mode=development",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts --exit",
+    "test:watch": "mocha -r ts-node/register test/**/*.spec.ts -w --watch-extensions ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almgong/rately.git"
+  },
+  "keywords": [
+    "rate limit",
+    "function executor"
+  ],
+  "author": "almgong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/almgong/rately/issues"
+  },
+  "homepage": "https://github.com/almgong/rately#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.5",
+    "@types/sinon": "^7.0.13",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.2",
+    "ts-loader": "^6.1.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
